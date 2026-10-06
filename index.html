@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Leon Mativo — Programmer specializing in C++, C#, and Java." />
+  <title>Lemark | Developer & CS Student</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <script>
+    // Prevent flash of wrong theme
+    (function() {
+      const saved = localStorage.getItem('theme');
+      if (saved === 'dark' || (!saved && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+        document.documentElement.setAttribute('data-theme', 'dark');
+      }
+    })();
+  </script>
+</head>
+<body>
+  <!-- Navigation -->
+  <header class="header">
+    <nav class="nav container">
+      <a href="#home" class="logo">
+        <span class="logo-icon">L</span>
+        Lemark.
+      </a>
+      <div class="nav-right">
+        <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark mode">
+          <span class="icon-sun">☀️</span>
+          <span class="icon-moon">🌙</span>
+        </button>
+        <button class="nav-toggle" id="nav-toggle" aria-label="Toggle menu">
+          <span></span><span></span><span></span>
+        </button>
+        <ul class="nav-menu" id="nav-menu">
+          <li><a href="#home" class="nav-link active">Home</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#skills" class="nav-link">Skills</a></li>
+          <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li><a href="#experience" class="nav-link">Experience</a></li>
+          <li><a href="#contact" class="nav-link btn-nav">Contact Me</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+      <div class="container hero-grid">
+        <div class="hero-text">
+          <p class="hero-greeting fade-in">— Hello There!</p>
+          <h1 class="hero-name fade-in fade-in-delay-1">I'm <span>Leon Mativo</span></h1>
+          <p class="hero-role fade-in fade-in-delay-2">Computer Science Student & Developer</p>
+          <p class="hero-desc fade-in fade-in-delay-3">
+            Learning by building — from data structures and console applications to web projects. Focused on understanding how software works, not just making it run.
+          </p>
+          <div class="hero-buttons fade-in fade-in-delay-4">
+            <a href="#projects" class="btn btn-primary">View Projects</a>
+            <a href="#contact" class="btn btn-outline">Let’s Connect</a>
+          </div>
+          <div class="hero-social fade-in fade-in-delay-4">
+            <span>Follow Me On</span>
+            <a href="https://github.com/mativoleon07-blip" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="hero-visual fade-in fade-in-delay-2">
+          <div class="avatar-circle">
+            <div class="avatar-inner">
+              <span class="avatar-letter">LM</span>
+            </div>
+            <div class="floating-tag tag-1">C++</div>
+            <div class="floating-tag tag-2">C#</div>
+            <div class="floating-tag tag-3">Java</div>
+            <div class="floating-tag tag-4">Data Structures</div>
+            <div class="floating-tag tag-5">Web Development</div>
+            <div class="floating-tag tag-6">Full-Stack Developer</div>
+          </div>
+          <div class="badge-circle">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+            <span>Code<br>First</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Marquee -->
+      <div class="marquee">
+        <div class="marquee-track">
+          <span>C++</span><span class="dot">✦</span>
+          <span>C#</span><span class="dot">✦</span>
+          <span>Java</span><span class="dot">✦</span>
+          <span>Data Structures</span><span class="dot">✦</span>
+          <span>Algorithms</span><span class="dot">✦</span>
+          <span>OOP</span><span class="dot">✦</span>
+          <span>Problem Solving</span><span class="dot">✦</span>
+          <span>Clean Code</span><span class="dot">✦</span>
+          <span>C++</span><span class="dot">✦</span>
+          <span>C#</span><span class="dot">✦</span>
+          <span>Java</span><span class="dot">✦</span>
+          <span>Data Structures</span><span class="dot">✦</span>
+          <span>Algorithms</span><span class="dot">✦</span>
+          <span>OOP</span><span class="dot">✦</span>
+          <span>Problem Solving</span><span class="dot">✦</span>
+          <span>Clean Code</span><span class="dot">✦</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills" class="section">
+      <div class="container">
+        <div class="section-header fade-in">
+          <p class="section-label">— What I’m Building</p>
+          <h2 class="section-title">Skills I’m Growing<span class="accent">.</span></h2>
+        </div>
+
+        <div class="skills-accordion">
+          <div class="skill-item active fade-in">
+            <button class="skill-header">
+              <span class="skill-num">01.</span>
+              <span class="skill-name">C++ Programming</span>
+              <span class="skill-toggle">−</span>
+            </button>
+            <div class="skill-body">
+              <div class="skill-tags">
+                <span>Pointers & Memory</span>
+                <span>Data Structures</span>
+                <span>OOP</span>
+                <span>STL</span>
+              </div>
+              <p>Strong focus on low-level control, efficient algorithms, and implementing data structures from scratch (linked lists, trees, etc.).</p>
+            </div>
+          </div>
+
+          <div class="skill-item fade-in fade-in-delay-1">
+            <button class="skill-header">
+              <span class="skill-num">02.</span>
+              <span class="skill-name">C# Development</span>
+              <span class="skill-toggle">+</span>
+            </button>
+            <div class="skill-body">
+              <div class="skill-tags">
+                <span>.NET</span>
+                <span>Console Apps</span>
+                <span>Collections</span>
+                <span>OOP</span>
+              </div>
+              <p>Building practical console applications and learning modern C# practices for clean, maintainable code.</p>
+            </div>
+          </div>
+
+          <div class="skill-item fade-in fade-in-delay-2">
+            <button class="skill-header">
+              <span class="skill-num">03.</span>
+              <span class="skill-name">Java</span>
+              <span class="skill-toggle">+</span>
+            </button>
+            <div class="skill-body">
+              <div class="skill-tags">
+                <span>OOP</span>
+                <span>Core Java</span>
+                <span>Problem Solving</span>
+              </div>
+              <p>Applying object-oriented principles and writing structured, reliable Java programs.</p>
+            </div>
+          </div>
+
+          <div class="skill-item fade-in fade-in-delay-3">
+            <button class="skill-header">
+              <span class="skill-num">04.</span>
+              <span class="skill-name">Core Concepts</span>
+              <span class="skill-toggle">+</span>
+            </button>
+            <div class="skill-body">
+              <div class="skill-tags">
+                <span>Algorithms</span>
+                <span>Data Structures</span>
+                <span>Clean Code</span>
+                <span>Git</span>
+              </div>
+              <p>Focusing on fundamentals that transfer across languages: problem solving, clean architecture, and version control.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="section section-alt">
+      <div class="container about-grid">
+        <div class="about-visual fade-in">
+          <div class="about-avatar">
+            <span>LM</span>
+          </div>
+          <div class="about-stat">
+            <strong>1+</strong>
+            <span>Projects I Understand</span>
+          </div>
+        </div>
+        <div class="about-content fade-in fade-in-delay-1">
+          <p class="section-label">— About Me</p>
+          <h2 class="section-title">Who is Leon Mativo<span class="accent">?</span></h2>
+          <p>
+            I'm a Computer Science student building my skills one project at a time. My current focus is <strong>C++</strong>, <strong>C#</strong>, <strong>Java</strong>, and web development, with a strong interest in understanding the fundamentals behind the code.
+          </p>
+          <p>
+            I believe understanding matters more than simply collecting projects. I’m building practical applications, studying algorithms and data structures, and improving by solving problems and learning from each project.
+          </p>
+          <a href="#contact" class="btn btn-primary">Let's Connect</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" class="section">
+      <div class="container">
+        <div class="section-header fade-in">
+          <p class="section-label">— Things I’ve Built</p>
+          <h2 class="section-title">Projects I Understand<span class="accent">.</span></h2>
+        </div>
+
+        <div class="projects-grid">
+          <article class="project-card fade-in">
+            <div class="project-top">
+              <span class="project-lang">C++</span>
+              <a href="https://github.com/mativoleon07-blip/Circular-Linked-List" target="_blank" rel="noopener noreferrer" class="project-link" aria-label="View on GitHub">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+              </a>
+            </div>
+            <h3>Circular Linked List</h3>
+            <p>A C++ implementation of a circular linked list with insertion, searching, reversal, deletion, and memory management.</p>
+            <div class="project-tags">
+              <span>C++</span>
+              <span>Data Structures</span>
+              <span>Pointers</span>
+            </div>
+          </article>
+
+          <article class="project-card fade-in fade-in-delay-1">
+            <div class="project-top">
+              <span class="project-lang">C#</span>
+              <a href="https://github.com/mativoleon07-blip/C-" target="_blank" rel="noopener noreferrer" class="project-link" aria-label="View on GitHub">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+              </a>
+            </div>
+            <h3>List Manager</h3>
+            <p>A C# console project for practising collections, program flow, user input, and basic object-oriented programming.</p>
+            <div class="project-tags">
+              <span>C#</span>
+              <span>.NET</span>
+              <span>Console App</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience -->
+    <section id="experience" class="section section-alt">
+      <div class="container">
+        <div class="section-header fade-in">
+          <p class="section-label">— My Journey</p>
+          <h2 class="section-title">Learning Through Building<span class="accent">.</span></h2>
+        </div>
+
+        <div class="timeline">
+          <div class="timeline-item fade-in">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <span class="timeline-date">2025 – Present</span>
+              <h3>Personal Projects & Practice</h3>
+              <ul>
+                <li>Implementing core data structures (circular linked lists, dynamic arrays)</li>
+                <li>Building console applications in C++ and C#</li>
+                <li>Practicing object-oriented design and clean coding habits</li>
+              </ul>
+            </div>
+          </div>
+          <div class="timeline-item fade-in fade-in-delay-1">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <span class="timeline-date">Ongoing</span>
+              <h3>Self-Directed Learning</h3>
+              <ul>
+                <li>Deepening knowledge of C++, C#, and Java</li>
+                <li>Studying algorithms, memory management & design principles</li>
+                <li>Learning to document projects and use GitHub as a record of my progress</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="section">
+      <div class="container contact-box fade-in">
+        <p class="section-label">— Get In Touch</p>
+        <h2 class="section-title">Let's work together<span class="accent">.</span></h2>
+        <p class="contact-desc">I’m always learning. Feel free to explore my work, follow my progress, or connect with me about technology and software development.</p>
+        <div class="contact-actions">
+          <a href="https://github.com/mativoleon07-blip" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+            GitHub
+          </a>
+        </div>
+        <p class="contact-note">More projects will be added as I build them and learn them properly.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>© <span id="year"></span> Leon Mativo. Built with HTML, CSS & JavaScript.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
